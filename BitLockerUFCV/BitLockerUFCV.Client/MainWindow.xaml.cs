@@ -17,6 +17,7 @@ namespace BitLockerUFCV.Client
         private readonly CancellationTokenSource _lifetimeCancellation = new();
         private bool _hasInitialized;
         private bool _isSanitizingPasswordInput;
+        private bool _windowConfigured;
 
         public MainWindow()
         {
@@ -34,12 +35,25 @@ namespace BitLockerUFCV.Client
 
             InitializeComponent();
             RootGrid.DataContext = ViewModel;
-            ConfigureWindow();
-            AppWindow.Closing += OnAppWindowClosing;
+            Activated += OnWindowActivated;
             Closed += OnWindowClosed;
         }
 
         public MainViewModel ViewModel { get; }
+
+        private void OnWindowActivated(object sender, WindowActivatedEventArgs args)
+        {
+            if (_windowConfigured)
+            {
+                return;
+            }
+
+            _windowConfigured = true;
+            Activated -= OnWindowActivated;
+
+            ConfigureWindow();
+            AppWindow.Closing += OnAppWindowClosing;
+        }
 
         private async void OnRootLoaded(object sender, RoutedEventArgs e)
         {
