@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BitLockerUFCV.Client (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BitLockerUFCV.Client (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

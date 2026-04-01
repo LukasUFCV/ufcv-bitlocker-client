@@ -1,0 +1,222 @@
+# ============================================
+# UFCV BitLocker Client - Visual Studio / .NET / WinUI 3 / MSIX
+# ============================================
+
+# ------------------------------
+# Visual Studio / user-specific
+# ------------------------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.userprefs
+
+# Optional editor folders
+.vscode/
+.idea/
+
+# ------------------------------
+# Build outputs
+# ------------------------------
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Aa][Rr][Mm]64[Ee][Cc]/
+bld/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+
+# Any bin/obj folder anywhere
+**/[Bb]in/
+**/[Oo]bj/
+
+# Generated files
+Generated Files/
+**/Generated Files/
+
+# ------------------------------
+# Visual Studio cache / temp
+# ------------------------------
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+*.tmp
+*.tmp_proj
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+!Directory.Build.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.idb
+*.pidb
+*.svclog
+*.scc
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+
+# Mono / crash
+mono_crash.*
+
+# ------------------------------
+# Logs / diagnostics
+# ------------------------------
+*.log
+*.tlog
+*.etl
+*.trace
+
+# ------------------------------
+# Test outputs
+# ------------------------------
+[Tt]est[Rr]esult*/
+TestResults/
+*.trx
+TestResult.xml
+nunit-*.xml
+*.VisualState.xml
+*.received.*
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# Coverage
+coverage/
+coverage-*/
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# ------------------------------
+# .NET / NuGet
+# ------------------------------
+artifacts/
+project.lock.json
+project.fragment.lock.json
+
+# NuGet packages (keep config, ignore packages folder)
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# ------------------------------
+# Publish / packaging / MSIX
+# ------------------------------
+AppPackages/
+BundleArtifacts/
+PackageArtifacts/
+Publish/
+PublishOutput/
+publish/
+publish_output/
+TestAppPackages/
+
+# MSIX / APPX generated files
+*.appx
+*.appxbundle
+*.appxupload
+*.msix
+*.msixbundle
+*.msixupload
+
+# Signing / certificates
+*.cer
+*.pfx
+*.p12
+
+# Local publish profiles user data
+*.pubxml.user
+
+# ------------------------------
+# Windows app packaging temp
+# ------------------------------
+*_Test/
+*_Debug/
+*_Release/
+
+# ------------------------------
+# Environment / secrets / local config
+# ------------------------------
+.env
+.env.*
+*.secret
+secrets.json
+
+# Optional local appsettings overrides
+appsettings.Development.json
+appsettings.Local.json
+
+# ------------------------------
+# PowerShell / script logs / temp
+# ------------------------------
+*.ps1xml
+*.clixml
+*.pssc
+*.psrc
+*.tmp.ps1
+*.bak
+*.old
+
+# If your scripts generate local transcripts/logs
+transcripts/
+logs/
+tmp/
+temp/
+
+# ------------------------------
+# OS files
+# ------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ------------------------------
+# Keep important source files
+# ------------------------------
+!.gitignore
+!*.sln
+!*.csproj
+!*.props
+!*.targets
+!*.xaml
+!*.cs
+!*.json
+!*.md
+!*.ps1
+!*.png
+!*.ico
+!*.svg
+!Package.appxmanifest
