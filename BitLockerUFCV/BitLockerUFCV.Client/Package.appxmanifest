@@ -16,7 +16,7 @@
   <mp:PhoneIdentity PhoneProductId="af8d1bd6-e262-4ff6-ac39-4e293fb4230a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>BitLockerUFCV.Client</DisplayName>
+    <DisplayName>UFCV BitLocker</DisplayName>
     <PublisherDisplayName>lmauffre</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -35,8 +35,8 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="BitLockerUFCV.Client"
-        Description="BitLockerUFCV.Client"
+        DisplayName="UFCV BitLocker"
+        Description="Activation BitLocker UFCV"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">

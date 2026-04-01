@@ -120,6 +120,7 @@ coverage*.info
 # .NET / NuGet
 # ------------------------------
 artifacts/
+.dotnet/
 project.lock.json
 project.fragment.lock.json
 
