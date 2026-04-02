@@ -1,6 +1,5 @@
 using System;
 using System.Globalization;
-using System.Text;
 using Microsoft.UI.Xaml;
 
 namespace BitLockerUFCV.Client
@@ -26,7 +25,6 @@ namespace BitLockerUFCV.Client
             CultureInfo culture = CultureInfo.GetCultureInfo("fr-FR");
             CultureInfo.DefaultThreadCurrentCulture = culture;
             CultureInfo.DefaultThreadCurrentUICulture = culture;
-            Console.OutputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: true);
         }
     }
 }

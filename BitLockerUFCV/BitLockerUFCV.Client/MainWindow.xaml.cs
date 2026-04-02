@@ -35,6 +35,9 @@ namespace BitLockerUFCV.Client
 
             InitializeComponent();
             RootGrid.DataContext = ViewModel;
+
+            // AppWindow is not fully ready during window construction in unpackaged WinUI 3.
+            // Deferring native window configuration avoids the startup COMException.
             Activated += OnWindowActivated;
             Closed += OnWindowClosed;
         }
